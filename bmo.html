@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B-MO | Hora de Aventura</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #101820;
+            color: #eafcfb;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #172b35 !important;
+            padding: 12px 25px;
+            border-bottom: 2px solid #43e0c1;
+        }
+
+        .nav-logo {
+            width: 55px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #43e0c1;
+        }
+
+        .navbar .nav-link {
+            color: #d9f5f2 !important;
+            margin: 0 8px;
+            transition: 0.3s;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #43e0c1 !important;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #173b43, #172538, #273c55);
+            border-radius: 0 0 35px 35px;
+            box-shadow: 0 8px 25px #0005;
+        }
+
+        .portada h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #43e0c1;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #43e0c155;
+        }
+
+        .portada p {
+            color: #d0e8e8;
+            font-size: 1.1rem;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 7px 16px;
+            border: 1px solid #43e0c1;
+            color: #43e0c1;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .titulo-seccion {
+            color: #43e0c1;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid #294b54;
+            transition: transform 0.35s, box-shadow 0.35s;
+        }
+
+        .galeria img:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px #43e0c133;
+        }
+
+        .tarjeta {
+            background: #192832;
+            border: 1px solid #29444e;
+            border-radius: 20px;
+            padding: 28px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            border-color: #43e0c1;
+            transform: translateY(-5px);
+        }
+
+        .tarjeta h3 {
+            color: #43e0c1;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            color: #d1dfe4;
+            line-height: 1.8;
+        }
+
+        .icono {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .frase {
+            text-align: center;
+            background: #193a40;
+            border-left: 5px solid #43e0c1;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 45px 0;
+            color: #bff9ee;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            background: #0b1219;
+            color: #8ca8b0;
+            padding: 22px;
+            margin-top: 50px;
+            border-top: 1px solid #29444e;
+        }
+
+        @media (max-width: 768px) {
+            .portada h1 {
+                font-size: 2.5rem;
+            }
+
+            .galeria img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/jake2.jpg" class="nav-logo" alt="Logo de Hora de Aventura">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="finn.html">Finn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="bmo.html">B-MO</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="portada">
+        <div class="container">
+            <span class="etiqueta">HORA DE AVENTURA</span>
+            <h1>B-MO</h1>
+            <p>¡El pequeño robot con un gran corazón!</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <section class="mb-5">
+            <h2 class="titulo-seccion text-center">Galería de B-MO</h2>
+
+            <div class="row g-4 galeria">
+                <div class="col-md-6">
+                    <img src="img/bmo1.webp" alt="B-MO en Hora de Aventura">
+                </div>
+
+                <div class="col-md-6">
+                    <img src="img/bmo2.webp" alt="B-MO, el robot de Finn y Jake">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="titulo-seccion text-center">Conoce a B-MO</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">🎮</div>
+                        <h3>¿Quién es B-MO?</h3>
+                        <p>
+                            B-MO es un pequeño robot que funciona como
+                            computadora y consola de videojuegos. Vive
+                            con Finn y Jake y los acompaña en muchas
+                            de sus aventuras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">💚</div>
+                        <h3>Su personalidad</h3>
+                        <p>
+                            Es amigable, divertido e imaginativo.
+                            Aunque es una máquina, demuestra emociones,
+                            crea sus propios juegos y disfruta pasar
+                            tiempo con sus amigos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">🏠</div>
+                        <h3>Su hogar</h3>
+                        <p>
+                            B-MO vive junto a Finn y Jake en su casa
+                            del árbol. Es parte importante de su grupo
+                            y comparte con ellos momentos divertidos
+                            y aventuras inolvidables.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">⭐</div>
+                        <h3>¿Qué lo hace especial?</h3>
+                        <p>
+                            Su imaginación, su inocencia y su forma
+                            de ver el mundo lo convierten en un personaje
+                            único. B-MO demuestra que la amistad puede
+                            encontrarse en los lugares más inesperados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="frase">
+            "Las mejores aventuras son las que compartimos con nuestros amigos."
+        </div>
+
+        <div class="text-center">
+            <a href="index.html" class="btn btn-lg"
+                style="background:#43e0c1; color:#10252c; font-weight:bold; border-radius:30px; padding:12px 30px;">
+                Volver al inicio
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="mb-0">Hora de Aventura | Mundo de B-MO</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

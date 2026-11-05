@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finn | Hora de Aventura</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #101820;
+            color: #eafcfb;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #172b35 !important;
+            padding: 12px 25px;
+            border-bottom: 2px solid #5ab5ff;
+        }
+
+        .nav-logo {
+            width: 55px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #5ab5ff;
+        }
+
+        .navbar .nav-link {
+            color: #d9f5f2 !important;
+            margin: 0 8px;
+            transition: 0.3s;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #5ab5ff !important;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #163b60, #172538, #28527a);
+            border-radius: 0 0 35px 35px;
+            box-shadow: 0 8px 25px #0005;
+        }
+
+        .portada h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #75c7ff;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #5ab5ff55;
+        }
+
+        .portada p {
+            color: #d0e8f8;
+            font-size: 1.1rem;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 7px 16px;
+            border: 1px solid #75c7ff;
+            color: #75c7ff;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .titulo-seccion {
+            color: #75c7ff;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid #294b68;
+            transition: transform 0.35s, box-shadow 0.35s;
+        }
+
+        .galeria img:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px #5ab5ff33;
+        }
+
+        .tarjeta {
+            background: #192832;
+            border: 1px solid #29444e;
+            border-radius: 20px;
+            padding: 28px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            border-color: #75c7ff;
+            transform: translateY(-5px);
+        }
+
+        .tarjeta h3 {
+            color: #75c7ff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            color: #d1dfe4;
+            line-height: 1.8;
+        }
+
+        .icono {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .frase {
+            text-align: center;
+            background: #19364b;
+            border-left: 5px solid #75c7ff;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 45px 0;
+            color: #c9eaff;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .boton-inicio {
+            background: #75c7ff;
+            color: #10252c;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 12px 30px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .boton-inicio:hover {
+            background: #a2dcff;
+            color: #10252c;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            background: #0b1219;
+            color: #8ca8b0;
+            padding: 22px;
+            margin-top: 50px;
+            border-top: 1px solid #29444e;
+        }
+
+        @media (max-width: 768px) {
+            .portada h1 {
+                font-size: 2.5rem;
+            }
+
+            .galeria img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/jake2.jpg" class="nav-logo" alt="Logo de Hora de Aventura">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="finn.html">Finn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bmo.html">B-MO</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registro</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="portada">
+        <div class="container">
+            <span class="etiqueta">HORA DE AVENTURA</span>
+            <h1>FINN</h1>
+            <p>¡Un héroe valiente listo para vivir nuevas aventuras!</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <section class="mb-5">
+            <h2 class="titulo-seccion text-center">Galería de Finn</h2>
+
+            <div class="row g-4 galeria">
+                <div class="col-md-6">
+                    <img src="img/fin2.jfif" alt="Finn el humano en Hora de Aventura">
+                </div>
+
+                <div class="col-md-6">
+                    <img src="img/fin1.jpg" alt="Finn preparado para una aventura">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="titulo-seccion text-center">Conoce a Finn</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">⚔️</div>
+                        <h3>¿Quién es Finn?</h3>
+                        <p>
+                            Finn es uno de los protagonistas de Hora de
+                            Aventura. Es un joven aventurero que vive en
+                            la Tierra de Ooo y siempre está dispuesto
+                            a ayudar a quienes lo necesitan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">🛡️</div>
+                        <h3>Su personalidad</h3>
+                        <p>
+                            Se caracteriza por ser valiente, amable,
+                            curioso y decidido. En sus aventuras enfrenta
+                            desafíos que le permiten aprender y crecer
+                            como persona.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">🐶</div>
+                        <h3>Su mejor amigo</h3>
+                        <p>
+                            Jake es su mejor amigo y compañero de aventuras.
+                            Juntos exploran lugares, ayudan a los demás
+                            y demuestran que la amistad es una parte
+                            fundamental de sus vidas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tarjeta">
+                        <div class="icono">⭐</div>
+                        <h3>Su espíritu aventurero</h3>
+                        <p>
+                            Finn disfruta enfrentarse a nuevos retos.
+                            Aunque a veces comete errores, aprende de
+                            sus experiencias y busca hacer lo correcto
+                            para proteger a sus amigos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="frase">
+            "Ser un héroe también significa aprender de cada aventura."
+        </div>
+
+        <div class="text-center">
+            <a href="index.html" class="boton-inicio">
+                Volver al inicio
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="mb-0">Hora de Aventura | Mundo de Finn</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
